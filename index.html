@@ -321,7 +321,7 @@
 			} // wis_spell_failure()
 			//
 			//
-			function dx_attack_adjustment($dex)
+			function dex_attack_adjustment($dex)
 			{
 				if ($dex==3) {return -3;}
 				if ($dex==4) {return -2;}
@@ -341,10 +341,10 @@
 				if ($dex==18) {return 3;}
 				//
 				return false;
-			} // dx_attack_adjustment()
+			} // dex_attack_adjustment()
 			//
 			//
-			function dx_defense_adjustment($dex)
+			function dex_defense_adjustment($dex)
 			{
 				if ($dex==3) {return 4;}
 				if ($dex==4) {return 3;}
@@ -364,7 +364,244 @@
 				if ($dex==18) {return -4;}
 				//
 				return false;
-			} // dx_defense_adjustment()
+			} // dex_defense_adjustment()
+			//
+			//
+			function dex_pick_pockets($dex)
+			{
+				if ($dex==9) {return -15;}
+				if ($dex==10) {return -10;}
+				if ($dex==11) {return -5;}
+				if ($dex==12) {return 0;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return 0;}
+				if ($dex==16) {return 0;}
+				if ($dex==17) {return 5;}
+				if ($dex==18) {return 10;}
+				//
+				return false;
+			} // dex_pick_pockets()
+			//
+			//
+			function dex_open_locks($dex)
+			{
+				if ($dex==9) {return -10;}
+				if ($dex==10) {return -5;}
+				if ($dex==11) {return 0;}
+				if ($dex==12) {return 0;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return 0;}
+				if ($dex==16) {return 5;}
+				if ($dex==17) {return 10;}
+				if ($dex==18) {return 15;}
+				//
+				return false;
+			} // dex_open_locks()
+			//
+			//
+			function dex_remove_traps($dex)
+			{
+				if ($dex==9) {return -10;}
+				if ($dex==10) {return -10;}
+				if ($dex==11) {return -5;}
+				if ($dex==12) {return 0;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return 0;}
+				if ($dex==16) {return 0;}
+				if ($dex==17) {return 0;}
+				if ($dex==18) {return 5;}
+				//
+				return false;
+			} // dex_remove_traps()
+			//
+			//
+			function dex_move_silently($dex)
+			{
+				if ($dex==9) {return -20;}
+				if ($dex==10) {return -15;}
+				if ($dex==11) {return -10;}
+				if ($dex==12) {return -5;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return 0;}
+				if ($dex==16) {return 0;}
+				if ($dex==17) {return 5;}
+				if ($dex==18) {return 10;}
+				//
+				return false;
+			} // dex_move_silently()
+			//
+			//
+			function dex_hide_in_shadows($dex)
+			{
+				if ($dex==9) {return -10;}
+				if ($dex==10) {return -5;}
+				if ($dex==11) {return 0;}
+				if ($dex==12) {return 0;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return 0;}
+				if ($dex==16) {return 0;}
+				if ($dex==17) {return 5;}
+				if ($dex==18) {return 10;}
+				//
+				return false;
+			} // dex_hide_in_shadows()
+			//
+			//
+			function con_hit_point_adjustment($con, $fighter)
+			{
+				if ($con==3) {return -2;}
+				if ($con==4) {return -1;}
+				if ($con==5) {return -1;}
+				if ($con==6) {return -1;}
+				if ($con==7) {return 0;}
+				if ($con==8) {return 0;}
+				if ($con==9) {return 0;}
+				if ($con==10) {return 0;}
+				if ($con==11) {return 0;}
+				if ($con==12) {return 0;}
+				if ($con==13) {return 0;}
+				if ($con==14) {return 0;}
+				if ($con==15) {return 1;}
+				if ($con==16) {return 2;}
+				if ($con==17)
+				{
+					if ($fighter===true)
+					{
+						return 3;
+					}
+					return 2;
+				}
+				if ($con==18)
+				{
+					if ($fighter===true)
+					{
+						return 4;
+					}
+					return 2;
+				}
+				//
+				return false;
+			} // con_hit_point_adjustment()
+			//
+			//
+			function con_system_shock($con)
+			{
+				if ($con==3) {return 35;}
+				if ($con==4) {return 40;}
+				if ($con==5) {return 45;}
+				if ($con==6) {return 50;}
+				if ($con==7) {return 55;}
+				if ($con==8) {return 60;}
+				if ($con==9) {return 65;}
+				if ($con==10) {return 70;}
+				if ($con==11) {return 75;}
+				if ($con==12) {return 80;}
+				if ($con==13) {return 85;}
+				if ($con==14) {return 88;}
+				if ($con==15) {return 91;}
+				if ($con==16) {return 95;}
+				if ($con==17) {return 97;}
+				if ($con==18) {return 99;}
+				//
+				return false;
+			} // con_system_shock()
+			//
+			//
+			function con_resurrection_survival($con)
+			{
+				if ($con==3) {return 40;}
+				if ($con==4) {return 45;}
+				if ($con==5) {return 50;}
+				if ($con==6) {return 55;}
+				if ($con==7) {return 60;}
+				if ($con==8) {return 65;}
+				if ($con==9) {return 70;}
+				if ($con==10) {return 75;}
+				if ($con==11) {return 80;}
+				if ($con==12) {return 85;}
+				if ($con==13) {return 90;}
+				if ($con==14) {return 92;}
+				if ($con==15) {return 94;}
+				if ($con==16) {return 96;}
+				if ($con==17) {return 98;}
+				if ($con==18) {return 100;}
+				//
+				return false;
+			} // con_resurrection_survival()
+			//
+			//
+			function char_max_henchmen($char)
+			{
+				if ($char==3) {return 1;}
+				if ($char==4) {return 1;}
+				if ($char==5) {return 2;}
+				if ($char==6) {return 2;}
+				if ($char==7) {return 3;}
+				if ($char==8) {return 3;}
+				if ($char==9) {return 4;}
+				if ($char==10) {return 4;}
+				if ($char==11) {return 4;}
+				if ($char==12) {return 5;}
+				if ($char==13) {return 5;}
+				if ($char==14) {return 6;}
+				if ($char==15) {return 7;}
+				if ($char==16) {return 8;}
+				if ($char==17) {return 10;}
+				if ($char==18) {return 15;}
+				//
+				return false;
+			} // char_max_henchmen()
+			//
+			//
+			function char_loyalty_base($char)
+			{
+				if ($char==3) {return -30;}
+				if ($char==4) {return -25;}
+				if ($char==5) {return -20;}
+				if ($char==6) {return -15;}
+				if ($char==7) {return -10;}
+				if ($char==8) {return -5;}
+				if ($char==9) {return 0;}
+				if ($char==10) {return 0;}
+				if ($char==11) {return 0;}
+				if ($char==12) {return 0;}
+				if ($char==13) {return 0;}
+				if ($char==14) {return 5;}
+				if ($char==15) {return 15;}
+				if ($char==16) {return 20;}
+				if ($char==17) {return 30;}
+				if ($char==18) {return 40;}
+				//
+				return false;
+			} // char_loyalty_base()
+			//
+			//
+			function char_reaction_adjustment($char)
+			{
+				if ($char==3) {return -25;}
+				if ($char==4) {return -20;}
+				if ($char==5) {return -15;}
+				if ($char==6) {return -10;}
+				if ($char==7) {return -5;}
+				if ($char==8) {return 0;}
+				if ($char==9) {return 0;}
+				if ($char==10) {return 0;}
+				if ($char==11) {return 0;}
+				if ($char==12) {return 0;}
+				if ($char==13) {return 5;}
+				if ($char==14) {return 10;}
+				if ($char==15) {return 15;}
+				if ($char==16) {return 25;}
+				if ($char==17) {return 30;}
+				if ($char==18) {return 35;}
+				//
+				return false;
+			} // char_reaction_adjustment()
 		</script>
 	</head>
 	<body>
