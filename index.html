@@ -262,6 +262,63 @@
 				//
 				return false;
 			} // iq_max_spells()
+			//
+			//
+			function wis_magic_attack($wis)
+			{
+				if ($wis==3) {return -3;}
+				if ($wis==4) {return -2;}
+				if ($wis==5) {return -1;}
+				if ($wis==6) {return -1;}
+				if ($wis==7) {return -1;}
+				if ($wis==8) {return 0;}
+				if ($wis==9) {return 0;}
+				if ($wis==10) {return 0;}
+				if ($wis==11) {return 0;}
+				if ($wis==12) {return 0;}
+				if ($wis==13) {return 0;}
+				if ($wis==14) {return 0;}
+				if ($wis==15) {return 1;}
+				if ($wis==16) {return 2;}
+				if ($wis==17) {return 3;}
+				if ($wis==18) {return 4;}
+				//
+				return false;
+			} // wis_magic_attack()
+			//
+			//
+			function wis_spell_bonus($wis)
+			{
+				if ($wis==9) {return [];}
+				if ($wis==10) {return [];}
+				if ($wis==11) {return [];}
+				if ($wis==12) {return [];}
+				if ($wis==13) {return [1];}
+				if ($wis==14) {return [1, 1];}
+				if ($wis==15) {return [1, 1, 2];}
+				if ($wis==16) {return [1, 1, 2, 2];}
+				if ($wis==17) {return [1, 1, 2, 2, 3];}
+				if ($wis==18) {return [1, 1, 2, 2, 3, 4];}
+				//
+				return false;
+			} // wis_spell_bonus()
+			//
+			//
+			function wis_spell_failure($wis)
+			{
+				if ($wis==9) {return 20;}
+				if ($wis==10) {return 15;}
+				if ($wis==11) {return 10;}
+				if ($wis==12) {return 5;}
+				if ($wis==13) {return 0;}
+				if ($wis==14) {return 0;}
+				if ($wis==15) {return 0;}
+				if ($wis==16) {return 0;}
+				if ($wis==17) {return 0;}
+				if ($wis==18) {return 0;}
+				//
+				return false;
+			} // wis_spell_failure()
 		</script>
 	</head>
 	<body>
