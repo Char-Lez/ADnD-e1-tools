@@ -30,6 +30,238 @@
 				//
 				return false;
 			} // st_hit_probability()
+			//
+			//
+			function st_damage_adj($str, $percent)
+			{
+				if ($str==3) {return -1;}
+				if ($str==4) {return -1;}
+				if ($str==5) {return -1;}
+				if ($str==6) {return 0;}
+				if ($str==7) {return 0;}
+				if ($str==8) {return 0;}
+				if ($str==9) {return 0;}
+				if ($str==10) {return 0;}
+				if ($str==11) {return 0;}
+				if ($str==12) {return 0;}
+				if ($str==13) {return 0;}
+				if ($str==14) {return 0;}
+				if ($str==15) {return 0;}
+				if ($str==16) {return 1;}
+				if ($str==17) {return 1;}
+				if ($str==18)
+				{
+					if ($precent==0) {return 2;}
+					if ($percent<=50) {return 3;}
+					if ($percent<=75) {return 3;}
+					if ($percent<=90) {return 4;}
+					if ($percent<=99) {return 5;}
+					return 6;
+				}
+				//
+				return false;
+			} // st_damage_adj()
+			//
+			//
+			function st_weight_allowance($str, $percent)
+			{
+				if ($str==3) {return -350;}
+				if ($str==4) {return -250;}
+				if ($str==5) {return -250;}
+				if ($str==6) {return -150;}
+				if ($str==7) {return -150;}
+				if ($str==8) {return 0;}
+				if ($str==9) {return 0;}
+				if ($str==10) {return 0;}
+				if ($str==11) {return 0;}
+				if ($str==12) {return 100;}
+				if ($str==13) {return 100;}
+				if ($str==14) {return 200;}
+				if ($str==15) {return 200;}
+				if ($str==16) {return 350;}
+				if ($str==17) {return 500;}
+				if ($str==18)
+				{
+					if ($precent==0) {return 750;}
+					if ($percent<=50) {return 1000;}
+					if ($percent<=75) {return 1200;}
+					if ($percent<=90) {return 1500;}
+					if ($percent<=99) {return 2000;}
+					return 3000;
+				}
+				//
+				return false;
+			} // st_weight_allowance()
+			//
+			//
+			function st_open_doors($str, $percent)
+			{
+				if ($str==3) {return 1;}
+				if ($str==4) {return 1;}
+				if ($str==5) {return 1;}
+				if ($str==6) {return 1;}
+				if ($str==7) {return 1;}
+				if ($str==8) {return 2;}
+				if ($str==9) {return 2;}
+				if ($str==10) {return 2;}
+				if ($str==11) {return 2;}
+				if ($str==12) {return 2;}
+				if ($str==13) {return 2;}
+				if ($str==14) {return 2;}
+				if ($str==15) {return 2;}
+				if ($str==16) {return 3;}
+				if ($str==17) {return 3;}
+				if ($str==18)
+				{
+					if ($precent==0) {return 3;}
+					if ($percent<=50) {return 3;}
+					if ($percent<=75) {return 4;}
+					if ($percent<=90) {return 4;}
+					if ($percent<=99) {return 4;}
+					return 5;
+				}
+				//
+				return false;
+			} // st_open_doors()
+			//
+			//
+			function st_open_magic_doors($str, $percent)
+			{
+				if ($str==3) {return 0;}
+				if ($str==4) {return 0;}
+				if ($str==5) {return 0;}
+				if ($str==6) {return 0;}
+				if ($str==7) {return 0;}
+				if ($str==8) {return 0;}
+				if ($str==9) {return 0;}
+				if ($str==10) {return 0;}
+				if ($str==11) {return 0;}
+				if ($str==12) {return 0;}
+				if ($str==13) {return 0;}
+				if ($str==14) {return 0;}
+				if ($str==15) {return 0;}
+				if ($str==16) {return 0;}
+				if ($str==17) {return 0;}
+				if ($str==18)
+				{
+					if ($precent==0) {return 0;}
+					if ($percent<=50) {return 0;}
+					if ($percent<=75) {return 0;}
+					if ($percent<=90) {return 0;}
+					if ($percent<=99) {return 1;}
+					return 2;
+				}
+				//
+				return false;
+			} // st_open_magic_doors()
+			//
+			//
+			function st_bend_bars($str, $percent)
+			{
+				if ($str==3) {return 0;}
+				if ($str==4) {return 0;}
+				if ($str==5) {return 0;}
+				if ($str==6) {return 0;}
+				if ($str==7) {return 0;}
+				if ($str==8) {return 1;}
+				if ($str==9) {return 1;}
+				if ($str==10) {return 2;}
+				if ($str==11) {return 2;}
+				if ($str==12) {return 4;}
+				if ($str==13) {return 4;}
+				if ($str==14) {return 7;}
+				if ($str==15) {return 7;}
+				if ($str==16) {return 10;}
+				if ($str==17) {return 13;}
+				if ($str==18)
+				{
+					if ($precent==0) {return 16;}
+					if ($percent<=50) {return 20;}
+					if ($percent<=75) {return 25;}
+					if ($percent<=90) {return 30;}
+					if ($percent<=99) {return 35;}
+					return 40;
+				}
+				//
+				return false;
+			} // st_bend_bars()
+			//
+			//
+			function iq_additional_languages($iq)
+			{
+				if ($iq==3) {return 0;}
+				if ($iq==4) {return 0;}
+				if ($iq==5) {return 0;}
+				if ($iq==6) {return 0;}
+				if ($iq==7) {return 0;}
+				if ($iq==8) {return 1;}
+				if ($iq==9) {return 1;}
+				if ($iq==10) {return 2;}
+				if ($iq==11) {return 2;}
+				if ($iq==12) {return 3;}
+				if ($iq==13) {return 3;}
+				if ($iq==14) {return 4;}
+				if ($iq==15) {return 4;}
+				if ($iq==16) {return 5;}
+				if ($iq==17) {return 6;}
+				if ($iq==18) {return 7;}
+				//
+				return false;
+			} // iq_additional_languages()
+			//
+			//
+			function iq_know_spell($iq)
+			{
+				if ($iq==9) {return 35;}
+				if ($iq==10) {return 45;}
+				if ($iq==11) {return 45;}
+				if ($iq==12) {return 45;}
+				if ($iq==13) {return 55;}
+				if ($iq==14) {return 55;}
+				if ($iq==15) {return 65;}
+				if ($iq==16) {return 65;}
+				if ($iq==17) {return 75;}
+				if ($iq==18) {return 85;}
+				if ($iq==19) {return 95;}
+				//
+				return false;
+			} // iq_know_spell()
+			//
+			//
+			function iq_min_spells($iq)
+			{
+				if ($iq==9) {return 4;}
+				if ($iq==10) {return 5;}
+				if ($iq==11) {return 5;}
+				if ($iq==12) {return 5;}
+				if ($iq==13) {return 6;}
+				if ($iq==14) {return 6;}
+				if ($iq==15) {return 7;}
+				if ($iq==16) {return 7;}
+				if ($iq==17) {return 8;}
+				if ($iq==18) {return 9;}
+				if ($iq==19) {return 10;}
+				//
+				return false;
+			} // iq_min_spells()
+			//
+			//
+			function iq_max_spells($iq)
+			{
+				if ($iq==9) {return 6;}
+				if ($iq==10) {return 7;}
+				if ($iq==11) {return 7;}
+				if ($iq==12) {return 7;}
+				if ($iq==13) {return 9;}
+				if ($iq==14) {return 9;}
+				if ($iq==15) {return 11;}
+				if ($iq==16) {return 11;}
+				if ($iq==17) {return 14;}
+				if ($iq==18) {return 18;}
+				if ($iq==19) {return 9999;}
+				//
+				return false;
+			} // iq_max_spells()
 		</script>
 	</head>
 	<body>
