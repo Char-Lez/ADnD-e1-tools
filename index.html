@@ -319,6 +319,52 @@
 				//
 				return false;
 			} // wis_spell_failure()
+			//
+			//
+			function dx_attack_adjustment($dex)
+			{
+				if ($dex==3) {return -3;}
+				if ($dex==4) {return -2;}
+				if ($dex==5) {return -1;}
+				if ($dex==6) {return 0;}
+				if ($dex==7) {return 0;}
+				if ($dex==8) {return 0;}
+				if ($dex==9) {return 0;}
+				if ($dex==10) {return 0;}
+				if ($dex==11) {return 0;}
+				if ($dex==12) {return 0;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return 0;}
+				if ($dex==16) {return 1;}
+				if ($dex==17) {return 2;}
+				if ($dex==18) {return 3;}
+				//
+				return false;
+			} // dx_attack_adjustment()
+			//
+			//
+			function dx_defense_adjustment($dex)
+			{
+				if ($dex==3) {return 4;}
+				if ($dex==4) {return 3;}
+				if ($dex==5) {return 2;}
+				if ($dex==6) {return 1;}
+				if ($dex==7) {return 0;}
+				if ($dex==8) {return 0;}
+				if ($dex==9) {return 0;}
+				if ($dex==10) {return 0;}
+				if ($dex==11) {return 0;}
+				if ($dex==12) {return 0;}
+				if ($dex==13) {return 0;}
+				if ($dex==14) {return 0;}
+				if ($dex==15) {return -1;}
+				if ($dex==16) {return -2;}
+				if ($dex==17) {return -3;}
+				if ($dex==18) {return -4;}
+				//
+				return false;
+			} // dx_defense_adjustment()
 		</script>
 	</head>
 	<body>
